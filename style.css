@@ -16,6 +16,9 @@
   --btn-padding: 0.6rem 2rem;
   --search-padding: 0.6rem 1rem;
   --card-padding: 1rem;
+
+  --sticky-top-left: 5.4rem;
+  --sticky-top-right: -18rem;
 }
 
 *,
@@ -122,7 +125,7 @@ nav .create {
   gap: 2rem;
 }
 
-/* ================= MAIN ================= */
+/* =================== MAIN ==================== */
 main {
   position: relative;
   top: 5.4rem;
@@ -134,3 +137,29 @@ main .container {
   column-gap: 2rem;
   position: relative;
 }
+
+/* =================== LEFT ==================== */
+
+main .container .left {
+  height: max-content;
+  position: sticky;
+  top: var(--sticky-top-left);
+}
+
+main .container .left .profile {
+  padding: var(--card-padding);
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  width: 100%;
+}
+
+/* -------------------- SIDEBAR ------------------ */
+.left .sidebar {
+  margin: 1rem;
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+}
+
