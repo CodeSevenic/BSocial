@@ -171,3 +171,59 @@ main .container .left .profile {
   transition: all 300ms ease;
   position: relative;
 }
+
+.left .sidebar .menu-item:hover {
+  background-color: var(--color-light);
+}
+
+.left .sidebar i {
+  font-size: 1.4rem;
+  color: var(--color-gray);
+  margin-left: 2rem;
+  position: relative;
+}
+
+.left .sidebar i .notification-count {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  font-size: 0.7rem;
+  width: fit-content;
+  border-radius: 0.8rem;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  top: -0.2rem;
+  right: -0.3rem;
+}
+
+.left .sidebar h3 {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.left .sidebar .active {
+  background-color: var(--color-light);
+}
+
+.left .sidebar .active i,
+.left .sidebar .active h3 {
+  color: var(--color-primary);
+}
+
+.left .sidebar .active::before {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 100%;
+  position: absolute;
+  background-color: var(--color-primary);
+}
+
+.left .sidebar .menu-item:first-child.active {
+  border-top-left-radius: var(--card-border-radius);
+  overflow: hidden;
+}
+
+.left .sidebar .menu-item:last-child.active {
+  border-bottom-left-radius: var(--card-border-radius);
+  overflow: hidden;
+}
