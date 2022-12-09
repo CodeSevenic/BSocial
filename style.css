@@ -158,7 +158,7 @@ main .container .left .profile {
 
 /* -------------------- SIDEBAR ------------------ */
 .left .sidebar {
-  margin: 1rem;
+  margin: 1rem 0;
   background-color: var(--color-white);
   border-radius: var(--card-border-radius);
 }
@@ -226,4 +226,35 @@ main .container .left .profile {
 .left .sidebar .menu-item:last-child.active {
   border-bottom-left-radius: var(--card-border-radius);
   overflow: hidden;
+}
+
+.left .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* --------------- NOTIFICATION POPUP --------------- */
+.left .notifications-popup {
+  position: absolute;
+  top: 0;
+  left: 110%;
+  width: 30rem;
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60% 25%);
+  z-index: 8;
+}
+
+.left .notifications-popup::before {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  background-color: var(--color-white);
+  position: absolute;
+  left: 0.6rem;
+  transform: rotate(45deg);
 }
