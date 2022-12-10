@@ -293,3 +293,7 @@ main .container .left .profile {
   position: relative;
   overflow: hidden;
 }
+
+.middle .stories .story:nth-child(1) {
+  background: url('./images/story-1.jpg') no-repeat center center/cover;
+}
