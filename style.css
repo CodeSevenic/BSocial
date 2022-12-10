@@ -291,4 +291,5 @@ main .container .left .profile {
   width: 100%;
   background-color: red;
   position: relative;
+  overflow: hidden;
 }
