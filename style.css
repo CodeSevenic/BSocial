@@ -302,7 +302,7 @@ main .container .left .profile {
   background: url('./images/story-1.jpg') no-repeat center center/cover;
 }
 
-.middle .stories .story:nth-child(1) {
+.middle .stories .story:nth-child(3) {
   background: url('./images/story-1.jpg') no-repeat center center/cover;
 }
 
