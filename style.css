@@ -331,3 +331,10 @@ main .container .left .profile {
 .middle .stories .story:nth-child(6) {
   background: url('./images/story-6.jpg') no-repeat center center/cover;
 }
+
+.middle .story .profile-photo {
+  width: 2rem;
+  height: 2rem;
+  align-self: flex-start;
+  border: 3px solid var(--color-primary);
+}
